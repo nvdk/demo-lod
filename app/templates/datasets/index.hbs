@@ -1,0 +1,13 @@
+<ul class="teasers">
+  {{#each model as |dataset| }}
+    <li>
+      <div class="teaser">
+        {{#link-to 'datasets.show' dataset.dataset.value class="teaser__overlay-link" tabindex="-1" aria-hidden="true" }}{{dataset.title.value}}{{/link-to}}
+        <div class="teaser__content teaser__content--section">
+          <h3>{{dataset.title.value}}</h3>
+          <p>{{dataset.abstract.value}}</p>
+        </div>
+      </div>
+    </li>
+  {{/each}}
+</ul>
