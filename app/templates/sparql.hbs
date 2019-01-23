@@ -1,1 +1,5 @@
-{{outlet}}
+{{#yasgui-integration as |yasgui|}}
+  {{input type='text' value=endpoint}}
+  {{yasgui.editor endpoint=endpoint}}
+  {{yasgui.results}}
+{{/yasgui-integration}}

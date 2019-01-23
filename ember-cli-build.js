@@ -27,6 +27,10 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+  app.import('node_modules/yasgui-yasqe/dist/yasqe.bundled.min.js');
+  app.import('node_modules/yasgui-yasqe/dist/yasqe.css');
+  app.import('node_modules/yasgui-yasr/dist/yasr.bundled.min.js');
+  app.import('node_modules/yasgui-yasr/dist/yasr.css');
 
   return app.toTree();
 };
